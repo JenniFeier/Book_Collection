@@ -1,0 +1,11 @@
+<div Class="delete">
+    <h1>Destroy the Book</h1>
+    <%= form_for(@book, :method => 'delete') do |form| %>
+        <p>Are you sure?</p>
+        <p> <%= @book.title %></p>
+
+        <div class="actions">
+            <%= form.submit("Delete")%>
+        </div>
+    <%end%>
+</div>
